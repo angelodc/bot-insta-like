@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static('./public'));
 
 app.use(cors);
-app.listen(3000, () => {
+app.listen(21233, () => {
     console.log('iniciado server')
 })
 
