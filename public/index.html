@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOT DA KEKA</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+                <h1>BOT DA KEKA</h1>
+                <img src="assets/keka.jpg" style="border-radius: 32px;width: auto;height: 134px;">
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <form method="post" action="/login" >
+                    <div class="form-group">
+                      <label for="username">Nome de usuário</label>
+                      <input type="text" class="form-control" name="username" id="username" aria-describedby="usuario">
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" name="password" id="password">
+                      <small id="aviso1" class="form-text text-muted">Relaxa que não salvo tua senha</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="shortcode">Código da publicação</label>
+                        <input type="text" name="shortcode" class="form-control" id="shortcode">
+                    </div>
+                    <small id="aviso2" class="form-text text-muted">OBS.: Vai marcar literalmente todos seguidores</small>
+                    <button type="submit" value="submit" class="btn btn-primary btn-lg col-md-12">Criar comentários!!</button>
+                  </form>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
