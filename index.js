@@ -11,10 +11,6 @@ app.use(bodyParser.urlencoded({
 app.use(express.static('./public'));
 
 app.use(cors);
-
-
-
-
 app.listen(3000, () => {
     console.log('iniciado server')
 })
@@ -23,7 +19,6 @@ app.post('/login', (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
     const shortcode = req.body.shortcode;
-    console.log('body: ', req.body);
     const client = new Instagram({ username, password })
     client.login().then((profile) => {
         client.getFollowings({userId: profile.userId}).then(users => {
