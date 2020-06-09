@@ -22,7 +22,6 @@ app.post('/login', (req, res) => {
     const client = new Instagram({ username, password })
     client.login().then((profile) => {
         client.getFollowings({userId: profile.userId}).then(users => {
-            console.log('usuarios: ', users.data.length);
                 client.getMediaByShortcode({shortcode}).then(media => {
                     //console.log(media);
                     let usuarios = users.data;
